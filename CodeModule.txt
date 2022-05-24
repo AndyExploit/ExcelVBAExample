@@ -1,0 +1,22 @@
+Sub InsertarValores()
+    'comentario
+    Worksheets("Sheet1").Range("A1").Value = "FVSASGA"
+End Sub
+
+Sub ImprimirValor()
+    'Muestra el valor en una ventana de windows
+    MsgBox Worksheets("Sheet1").Range("A1").Value
+End Sub
+
+Sub BorrarValor()
+    'Borra los valores que esten en los dos puntos marcados en Range
+    Worksheets("Sheet1").Range("A1:C3").Clear
+End Sub
+
+Sub CopiarAOtroLugar()
+    Range("D1").Copy Range("E1")
+End Sub
+
+Sub OtroMetodoParaCopiarAOtroLugar()
+    Range("D2").Copy Destination:=Range("E2")
+End Sub
